@@ -5,21 +5,21 @@
 class Notionctl < Formula
   desc "Declarative Notion database management. Define databases in YAML, sync to Notion."
   homepage "https://github.com/radityajay/notionctl"
-  version "1.0.1"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/radityajay/notionctl/releases/download/v1.0.1/notionctl_1.0.1_darwin_amd64.tar.gz"
-      sha256 "83f888bdef456f513398df3c4213df802e12f3043ab8001e2fe06560165bdd2b"
+      url "https://github.com/radityajay/notionctl/releases/download/v1.1.0/notionctl_1.1.0_darwin_amd64.tar.gz"
+      sha256 "457d3ad99d0bf488b69d5d6cafb1b1643009473744ee5911cd61b2418c0e4be7"
 
       define_method(:install) do
         bin.install "notionctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/radityajay/notionctl/releases/download/v1.0.1/notionctl_1.0.1_darwin_arm64.tar.gz"
-      sha256 "fc6bec501cd280975556bcdaabc8affd9f9c8fb05a2f7b0dddb5f63a74dc0e76"
+      url "https://github.com/radityajay/notionctl/releases/download/v1.1.0/notionctl_1.1.0_darwin_arm64.tar.gz"
+      sha256 "26042a6986620aad1da71124292f15eca95ddaa3c00d568a2ec6a4ab71d51c25"
 
       define_method(:install) do
         bin.install "notionctl"
@@ -29,15 +29,15 @@ class Notionctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/radityajay/notionctl/releases/download/v1.0.1/notionctl_1.0.1_linux_amd64.tar.gz"
-      sha256 "e64c2b676595727b3df514bd10393a86717661b530ddef2191a4272ea8671fae"
+      url "https://github.com/radityajay/notionctl/releases/download/v1.1.0/notionctl_1.1.0_linux_amd64.tar.gz"
+      sha256 "149d71764b9c2a1dec7c74357447840cabd1e5c67362c52d68274b96a71dc9b9"
       define_method(:install) do
         bin.install "notionctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/radityajay/notionctl/releases/download/v1.0.1/notionctl_1.0.1_linux_arm64.tar.gz"
-      sha256 "6becef640445307615b67d3ff70ad5acbb77a72fbbef63f71de958c3c578ae98"
+      url "https://github.com/radityajay/notionctl/releases/download/v1.1.0/notionctl_1.1.0_linux_arm64.tar.gz"
+      sha256 "87ba27eccc245df2b4546a20a797f6e438cbee7582fe0e9b1297a6e1a54c3630"
       define_method(:install) do
         bin.install "notionctl"
       end
